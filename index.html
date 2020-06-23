@@ -1,0 +1,43 @@
+<!-- @format -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <!-- fontawesome -->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.13.1/css/all.css"
+      integrity="sha384-xxzQGERXS00kBmZW/6qxqJPyxW3UR0BPsL4c8ILaIWXva5kFi7TxkIIaMiKtqV1Q"
+      crossorigin="anonymous"
+    />
+  </head>
+
+  <body>
+    <div class="timer">
+      <div class="controls">
+        <input type="text" id="duration" value="30" />
+        <div>
+          <button id="start"><i class="fas fa-play"></i></button>
+          <button id="pause" hidden><i class="fas fa-pause"></i></button>
+        </div>
+      </div>
+      <svg height="400" width="400">
+        <circle
+          r="190"
+          cx="200"
+          cy="200"
+          fill="transparent"
+          stroke="black"
+          stroke-width="15"
+          transform="rotate(-90 200 200)"
+        ></circle>
+      </svg>
+    </div>
+
+    <script src="timer.js"></script>
+    <script src="index.js"></script>
+  </body>
+</html>
